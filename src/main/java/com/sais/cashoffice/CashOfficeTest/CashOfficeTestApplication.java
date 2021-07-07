@@ -16,7 +16,7 @@ public class CashOfficeTestApplication {
 	private static final Logger LOGGER = LogManager.getLogger(CashOfficeTestApplication.class);
 
 	public static void main(String[] args) {
-		// testing reset
+		// testing reset 
 		SpringApplication.run(CashOfficeTestApplication.class, args);		
 	}
 	
