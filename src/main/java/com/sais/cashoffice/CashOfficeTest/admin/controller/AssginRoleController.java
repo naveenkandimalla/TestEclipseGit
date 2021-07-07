@@ -126,7 +126,7 @@ public class AssginRoleController {
 	 }
 	 
 	 
-	 
+	 //used for updating group authority
 	 @PutMapping(path="/admin/usermangement/updaterecordgroupauthority")
 	 public ResponseEntity<?>  updaterecordgroupauthority(@RequestBody GroupAuthorityModel gam){
 		 char e;
