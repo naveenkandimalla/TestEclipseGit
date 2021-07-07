@@ -16,6 +16,7 @@ public class CashOfficeTestApplication {
 	private static final Logger LOGGER = LogManager.getLogger(CashOfficeTestApplication.class);
 
 	public static void main(String[] args) {
+		//used for bootstrapping spring boot application
 		SpringApplication.run(CashOfficeTestApplication.class, args);		
 	}
 	
