@@ -1,0 +1,68 @@
+MODE_ID,MODE_NAME,FOCUSED,CPF,CPF_BANK,PAYMODE_TYPE,MODE_ABBR,IS_COLLECTION,IS_PAYMENT,IS_POLICY,IS_BATCH,IS_OTC,IS_CASH,MODE_DESC,ACCOUNT_TYPE,CAN_SUSPEND,IS_BANK,NEED_TEMP_RECEIPT_NO,MAX_DEDUCTION_FAIL_TIME,MODE_CODE
+0,"Not Relevant",N,N,N,0,0,N,N,N,N,N,N,"For excetpion case, such as migration cases",NULL,N,N,N,NULL,0
+1,Cash,N,N,N,1,C,Y,Y,Y,N,Y,Y,"Physical Cash in IDR or USD",NULL,N,Y,Y,NULL,C
+2,Cheque,N,N,N,2,K,Y,Y,Y,Y,Y,Y,"Physical Cheque",NULL,N,Y,Y,NULL,K
+3,"Direct Debit",N,N,N,3,DDA,Y,Y,Y,Y,Y,Y,"EFT(electronic file transfer), the bank account belongs to policy holder",2,Y,N,N,NULL,DDA
+4,"Debit Agent",N,N,N,0,DA,Y,N,N,N,N,N,"Debit/Credit Agent",NULL,N,N,N,NULL,DA
+5,"Internal Transfer",N,N,N,5,5,Y,N,N,N,N,N,"transfering within the insurance company, for example, transfer from payable to suspense or from one policy to another policy",NULL,N,N,N,NULL,5
+6,"Insurer Payment",N,N,N,0,6,Y,N,N,Y,N,N,"To waive certain amount of money or give tolerance to customer.",NULL,N,N,N,NULL,6
+7,"Collecting Bank",N,N,N,6,CBK,Y,N,N,N,Y,Y,"No billing, but bank collects the money for insurance company ad hoc. And the phsical cash or cheque won't be recorded in our system.(collecting bank,Lockbox-manual)",NULL,N,N,N,NULL,CBK
+8,"Investment Account Offer",N,N,N,0,8,N,N,Y,Y,N,N,"Selling units by offer price to pay for something",NULL,N,N,N,NULL,8
+9,"Investment Account Bid",N,N,N,0,9,N,N,Y,Y,N,N,"Selling units by bid price to pay for something",NULL,N,N,N,NULL,9
+11,"CPF OA",N,Y,Y,4,OA,Y,Y,Y,Y,N,N,"CPF Offical Account",10,Y,N,N,NULL,OA
+12,SRS,N,Y,Y,4,SRS,Y,Y,Y,Y,N,N,"SRS Account",15,Y,N,N,NULL,SRS
+13,ASPF-SA,N,Y,N,4,ASA,Y,Y,Y,Y,N,N,"ASPF Account",13,N,N,N,NULL,ASA
+14,SSS,N,N,N,0,SSS,Y,N,Y,Y,Y,N,"Collecting money from the salary account of policy holder",5,N,N,N,NULL,SSS
+15,"BANK'S ORDER",N,N,N,0,BO,Y,N,Y,Y,Y,Y,"Customer gives instructions to bank to transfer money from customer's account to insurance company without billing.Bancassurance Transfer(Standing Instrution)",NULL,N,N,N,NULL,BO
+16,"CPF SA",N,Y,N,4,SA,Y,Y,Y,Y,N,N,"CPF Special Account",11,Y,N,N,NULL,SA
+17,"CPF MSS",N,Y,N,4,MSS,Y,Y,Y,Y,N,N,"CPF MSS Account",16,N,N,N,NULL,MSS
+18,"CPF MSPS",N,Y,N,4,MSPS,Y,Y,Y,Y,N,N,"CPF MSPS Account",17,N,N,N,NULL,MSPS
+19,"CPF MEDISAVE",N,Y,N,4,MEDI,Y,Y,Y,Y,N,N,"CPF MEDISSIVE Account",14,N,N,N,NULL,MEDI
+22,"Lock box",N,N,N,6,LB,Y,N,N,Y,Y,Y,"CITIDIAL(Lock box)",NULL,N,N,N,NULL,LB
+23,E-Banking,N,N,N,6,EB,Y,N,N,Y,Y,Y,"E-banking (includes Internet, ATM and Phonebanking) - to provide another level to indicate if E-Banking is from OCBC or DBS",NULL,N,N,N,NULL,EB
+24,ATM,N,N,N,6,ATM,Y,N,N,N,N,N,"ATM ",NULL,N,N,N,NULL,ATM
+25,INTERNET/WIRELESS,N,N,N,6,IW,Y,N,N,N,N,N,"Internet & Wireless",NULL,N,N,N,NULL,IW
+27,"Phone Banking",N,N,N,6,PB,Y,N,N,N,N,N,"Phone Banking",NULL,N,N,N,NULL,PB
+30,"Credit Card",N,N,N,0,CC,Y,N,Y,Y,Y,Y,"Credit Card",8,Y,N,N,NULL,CC
+31,ASPF-OA,N,Y,Y,4,AOA,Y,Y,Y,Y,N,N,"ASPF Agent Bank",12,N,N,N,NULL,AOA
+32,"Standing Instruction",N,N,N,0,SI,Y,N,Y,Y,Y,Y,"Standing Instruction",NULL,N,N,N,NULL,SI
+33,"Demand draft",N,N,N,0,DD,Y,N,Y,N,Y,Y,"Demand draft,Cashier’s Order (includes Banker’s Cheque & Bank Draft)",NULL,N,N,N,NULL,DD
+34,"Telegraphic Transfer (TT)",N,N,N,0,TT,Y,Y,Y,N,Y,Y,"Telegraphic Transfer (TT)",NULL,N,N,N,NULL,TT
+35,"Premium Voucher",N,N,N,0,PRV,Y,N,N,N,Y,N,"Premium Voucher",NULL,N,N,N,NULL,PRV
+36,"Deferred Benefit AgentAccount",N,N,N,5,DB,Y,N,Y,N,N,N,"Deferred Benefit AgentAccount",NULL,N,N,N,NULL,DB
+37,"Claim Waiver",N,N,N,5,37,Y,N,N,Y,N,N,"Claim Waiver",NULL,N,N,N,NULL,37
+39,"Manual Cheque",N,N,N,2,M,N,Y,Y,N,N,Y,"issue cheque manually",NULL,N,N,N,NULL,M
+40,CPF-MEPS,N,Y,Y,4,MEPS,Y,Y,N,Y,Y,Y,"Way by which money is transferred to CPF board or agent bank",NULL,N,N,N,NULL,MEPS
+41,"Lock box Manual",N,N,N,0,LBM,Y,N,N,N,N,Y,"Only for cases which failed upload for GELM lockbox batch upload",NULL,N,N,N,NULL,LBM
+42,CPF-Cheque,N,Y,N,4,CPF-CHQ,Y,Y,N,N,Y,Y,"A cheque received from CPF Board or Agent bank(CPF monies)",NULL,N,N,N,NULL,CPF-CHQ
+43,"Money Order",N,N,N,0,MO,Y,N,N,N,Y,Y,"Money order",NULL,N,N,N,NULL,MO
+44,NETS,N,N,N,0,NT,Y,N,N,N,Y,Y,NETs,NULL,N,N,N,NULL,NT
+45,ASPF-MSS,N,Y,N,4,ASPFMSS,Y,Y,Y,N,N,N,ASPF-MSS,18,N,N,N,NULL,ASPFMSS
+46,ASPF-MSPS,N,Y,N,4,ASPFMSPS,Y,Y,Y,N,N,N,ASPF-MSPS,19,N,N,N,NULL,ASPFMSPS
+47,CashierOrder,N,N,N,0,CO,Y,N,N,N,Y,Y,"Cashier Order",NULL,N,N,N,NULL,CO
+48,"Claim Waiver-Waiver due to Death",N,N,N,0,48,Y,N,Y,N,N,Y,"Claim Waiver-Waiver due to Death",NULL,N,N,N,NULL,48
+49,"Claim Waiver-Waiver due to LA",N,N,N,0,49,Y,N,Y,N,N,Y,"Claim Waiver-Waiver due to LA",NULL,N,N,N,NULL,49
+50,"Claim Waiver-Waiver due to TPD",N,N,N,0,50,Y,N,Y,N,N,Y,"Claim Waiver-Waiver due to TPD",NULL,N,N,N,NULL,50
+51,"Claim waiver-waiver due to Paycare",N,N,N,0,51,Y,N,Y,N,N,Y,"Claim waiver-waiver due to Paycare",NULL,N,N,N,NULL,51
+52,"Claim waiver due to Long term care",N,N,N,0,52,Y,N,Y,N,N,Y,"Claim waiver-waiver due to Long term care",NULL,N,N,N,NULL,52
+53,"Claim waiver-waiver due to Disability",N,N,N,0,53,Y,N,Y,N,N,Y,"Claim waiver-waiver due to Disability",NULL,N,N,N,NULL,53
+54,"Claim waiver due to Her LA & Pregnancy",N,N,N,0,54,Y,N,Y,N,N,Y,"Claim waiver-waiver due to Her LA & Pregnancy Risk Claim",NULL,N,N,N,NULL,54
+55,"Policy Loan waiver",N,N,N,0,55,Y,N,N,N,N,Y,"Claim waiver-waiver due to Her LA & Pregnancy Risk Claim",NULL,N,N,N,NULL,55
+56,"APL waiver",N,N,N,0,56,Y,N,N,N,N,Y,"Claim waiver-waiver due to Her LA & Pregnancy Risk Claim",NULL,N,N,N,NULL,56
+57,"Claim Waiver-Waiver due to Accident",N,N,N,0,57,Y,N,Y,N,N,Y,"Claim Waiver-Waiver due to Accident",NULL,N,N,N,NULL,57
+58,BANK,N,N,N,0,BANK,Y,Y,Y,Y,Y,N,BANK,NULL,Y,N,N,NULL,58
+60,DDE,N,N,N,0,DDE,Y,Y,Y,Y,Y,N,DDE,2,Y,N,N,NULL,60
+61,ESO,N,N,N,0,ESO,Y,Y,Y,Y,Y,N,ESO,NULL,Y,N,N,NULL,61
+64,BSO,N,N,N,0,BSO,Y,Y,Y,Y,Y,N,BSO,2,Y,N,N,NULL,64
+65,GSO,N,N,N,0,GSO,Y,Y,Y,Y,Y,N,GSO,2,Y,N,N,NULL,65
+66,ESO(Electronic),N,N,N,0,ESO(Electronic),Y,Y,Y,Y,Y,N,ESO(Electronic),2,Y,N,N,NULL,66
+67,ESO(Semi-Electronic),N,N,N,0,ESO(Semi-Electronic),Y,Y,Y,Y,Y,N,ESO(Semi-Electronic),2,Y,N,N,NULL,67
+68,ESO(Manual),N,N,N,0,ESO(Manual),Y,Y,Y,Y,Y,N,ESO(Manual),NULL,Y,N,N,NULL,68
+69,EFT,N,N,N,0,EFT,Y,Y,Y,Y,Y,N,"EFT payment to refund premium.",NULL,Y,Y,N,NULL,69
+70,"Prepaid Card",N,N,N,0,"Prepaid Card",Y,Y,Y,Y,Y,N,"Prepaid card payment for disbursement",NULL,Y,Y,N,NULL,70
+90,"FB Collection",N,N,N,6,FB,Y,N,Y,Y,Y,Y,"FB Collection",NULL,N,N,N,NULL,FB
+91,"Internal Payment",N,N,N,0,91,N,N,Y,N,Y,N,"Internal payment, to cancel the wrong collection of the suspence, or to pay the amount to another policy.",NULL,N,N,N,NULL,91
+92,"Claim Internal Transfer",N,N,N,0,92,N,N,Y,N,Y,N,"Claim Internal Transfer",NULL,N,N,N,NULL,92
+93,"Premium Holiday",N,N,N,0,93,N,N,Y,N,Y,N,"Premium Holiday",NULL,N,N,N,NULL,93
+95,"Cash Back Internal Transfer",N,N,N,0,95,Y,N,N,Y,N,N,"Cash Back Internal Transfer",NULL,N,N,N,NULL,95
+96,"Loyalty Bonus Internal Transfer",N,N,N,0,96,Y,N,N,Y,N,N,"Loyalty Bonus Internal Transfer",NULL,N,N,N,NULL,96
